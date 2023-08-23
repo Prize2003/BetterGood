@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en"></html>
+  <head>
+    <link rel="stylesheet" href="style/global.css" />
+    <link rel="stylesheet" href="style/header.css" />
+    <link rel="stylesheet" href="style/content.css" />
+    <link rel="stylesheet" href="style/footer.css" />
+    <link rel="stylesheet" href="style/pc.css" />
+    <title>Prac</title>
+  </head>
+  <body>
+    <div class="mn">
+        <div class="black">hi</div>
+        <div class="yellow">we</div>
+        <div class="black">are</div>
+        <div class="yellow">here</div>
+        <div class="yellow">DO</div>
+        <div class="black">you</div>
+        <div class="yellow">hip</div>
+        <div class="black">hop</div>
+    </div>
+    <div>
+        <button class="btn" onclick="myFunction()">Click</button>
+    </div>
+    <script>
+        let a = 0;
+        function myFunction() {
+            if(a == 0){
+                a = 1;
+                document.body.style.background = "red";
+            }
+            else{
+                a = 0;
+                document.body.style.background = "blueviolet";}
+        }
+    </script>
+    <form action="<?=$_SERVER['PHP_SELF'];?>" method="POST">
+        <label for="lname">A: </label>
+        <input type="text" id="fname" name="number1"><br><br>
+        <label for="lname">B: </label>
+        <input type="text" id="lname" name="number2"><br><br>
+        <input type="submit" value="value">
+    </form>
+    <?php
+
+        isset( $_POST['number1'] ) ? $number1 = $_POST['number1'] : $number1 = "";
+        isset( $_POST['number2'] ) ? $number2 = $_POST['number2'] : $number2 = "";
+
+        if( !empty( $number1 ) && !empty( $number2 ) ) {
+            $total = $number1 + $number2;
+            echo $number1." + ".$number2." = ".$total;
+        }
+
+   ?>
+  </body>
+</html>

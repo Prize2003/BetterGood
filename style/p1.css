@@ -1,0 +1,271 @@
+.container {
+  padding: 0 150px;
+}
+
+.container2 {
+  padding: 0 150px;
+}
+
+.header {
+  display: flex;
+  justify-content: space-between;
+}
+
+.profile {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+
+.menu {
+  display: none;
+}
+
+.mode {
+  display: flex;
+  width: 33%;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.banner {
+  padding: 100px 0;
+  display: flex;
+  justify-content: space-between;
+}
+
+.banner-text {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  width: 50%;
+}
+
+.banner h1 {
+  width: 350px;
+}
+
+.banner p {
+  width: 350px;
+}
+
+.Howgood {
+  padding: 100px 0;
+  background-color: aliceblue;
+}
+
+.Howgood-head {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.Howgood-head h1 {
+  display: block;
+  font-size: 2em;
+  margin-block-start: 0;
+  margin-block-end: 0;
+  margin-inline-start: 0;
+  margin-inline-end: 0;
+  font-weight: bold;
+}
+
+.Howgood-head p {
+  text-align: center;
+  /* width: 1000px; */
+}
+
+.Howgood-img {
+  margin-top: 10px;
+  display: flex;
+}
+
+.Howgood-img p {
+  padding: 0 20px;
+}
+
+.Howgood-img img {
+  width: 100%;
+}
+
+.Howgood-card {
+  width: 500px;
+}
+
+.universe {
+  background-image: url("../assets/power-up-1.png");
+  padding: 50px 0;
+}
+
+.universe h1 {
+  display: flex;
+  justify-content: center;
+  color: white;
+}
+
+.universe p {
+  display: flex;
+  justify-content: center;
+  text-align: center;
+  color: white;
+}
+
+.universe-mob {
+  display: none;
+}
+
+.uni-desk-2 {
+  margin-top: 10px;
+}
+
+.techno {
+  background-color: gainsboro;
+}
+
+.tech {
+  padding: 100px 0;
+  display: grid;
+  grid-template-columns: auto auto;
+  gap: 40px;
+}
+
+.tech h1 {
+  display: flex;
+  justify-content: center;
+  text-align: center;
+}
+
+.tech p {
+  display: flex;
+  justify-content: center;
+  text-align: center;
+}
+
+.tech img {
+  width: 100%;
+}
+
+.end1 {
+  padding: 30px 0;
+  display: flex;
+  justify-content: space-between;
+}
+
+.end-txt1 {
+  display: flex;
+  margin-left: 20px;
+  align-items: center;
+  gap: 30px;
+}
+
+.end-logo1 {
+  display: flex;
+  gap: 30px;
+  align-items: center;
+}
+
+.end-logo1 img {
+  height: 40px;
+  width: 40px;
+}
+
+.end2 {
+  display: none;
+}
+
+@media screen and (max-width: 900px) {
+  .container {
+    padding: 0px;
+  }
+  .mode {
+    display: none;
+  }
+  .profile {
+    display: none;
+  }
+  .menu {
+    display: flex;
+    align-items: center;
+  }
+  .banner {
+    flex-direction: column-reverse;
+    align-items: center;
+    padding: 0;
+  }
+
+  .banner-text {
+    display: flex;
+    justify-content: flex-start;
+    width: 100%;
+  }
+
+  .banner h1 {
+    width: unset;
+  }
+
+  .banner p {
+    width: unset;
+  }
+
+  .banner img {
+    width: 100%;
+  }
+  .Howgood-img {
+    display: flex;
+    flex-wrap: wrap;
+  }
+
+  .Howgood-img p {
+    padding: 0 20px;
+  }
+
+  .Howgood-img img {
+    width: 100%;
+  }
+
+  .Howgood-card {
+    width: 500px;
+  }
+  .universe-mob {
+    display: block;
+  }
+  .uni-desk {
+    display: none !important;
+  }
+  .Howgood-head h1 {
+    text-align: center;
+  }
+  .universe h1 {
+    text-align: center;
+  }
+
+  .techno .container2 {
+    padding: 0;
+  }
+
+  .tech {
+    display: flex;
+    flex-direction: column;
+    padding: 0 0 100px 0;
+  }
+  .tech img {
+    width: 100%;
+  }
+  .container .end1 {
+    display: none;
+  }
+  .end2 {
+    margin-top: 30px;
+    display: flex;
+    flex-direction: column;
+  }
+  .end2 img {
+    height: 30px;
+    width: 40px;
+  }
+  .end2 .end-logo1 {
+    margin-top: 30px;
+    height: 30px;
+    width: 40px;
+  }
+}
